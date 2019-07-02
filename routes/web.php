@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::post('/book','BookController@store');
+Route::put('/book/{id}','BookController@update');
